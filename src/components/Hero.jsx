@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 
 const backgroundImages = [
   '/images/new-aashif-medical-hall-thawe-gopalganj-medical-equipment-dealers-a4MZyYHTfj.jpg',
+    '/images/Screenshot 2026-08-11 222639.png',
+  '/images/WhatsApp Image 2026-08-11 at 22.16.39.jpeg',
   '/images/gettyimages-1312706504-612x612.jpg',
   '/images/images.jpeg',
   '/images/photo-1519494026892-80bbd2d6fd0d.avif',
