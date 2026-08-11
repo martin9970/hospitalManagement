@@ -1,19 +1,53 @@
 import { Link } from 'react-router-dom';
 import { Phone, Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+
+const backgroundImages = [
+  '/images/new-aashif-medical-hall-thawe-gopalganj-medical-equipment-dealers-a4MZyYHTfj.jpg',
+  '/images/gettyimages-1312706504-612x612.jpg',
+  '/images/images.jpeg',
+  '/images/photo-1519494026892-80bbd2d6fd0d.avif',
+];
 
 export default function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 3000); // 3 seconds per image (1 sec animation + 2 sec display)
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
 
       {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=2000"
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <motion.img
+          key={currentImageIndex}
+          src={backgroundImages[currentImageIndex]}
           alt="Hospital"
-          className="w-full h-full object-cover"
+          loading="lazy"
+          initial={{ opacity: 0, scale: 1.1, x: 100 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          exit={{ opacity: 0, scale: 0.95, x: -100 }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
+          className="w-full h-full object-cover object-center"
+          style={{ 
+            width: '100%', 
+            height: '100%',
+            display: 'block'
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent"></div>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, delay: 0.1 }}
+          className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent"
+        />
       </div>
 
       {/* Content */}
@@ -33,7 +67,7 @@ export default function Hero() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 Welcome to <br />
                 <span className="text-blue-500">
-                  Q9 Multy Speciality Hospital
+                  Aashique Medical Hall Thawe
                 </span>
               </h1>
 
@@ -76,7 +110,7 @@ export default function Hero() {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
 
             {[
-              { label: 'Qualified Doctors', value: '150+' },
+              { label: 'Qualified Doctors', value: '100+' },
               { label: 'Success Rate', value: '99%' },
               { label: 'Modern Rooms', value: '500+' },
               { label: 'Happy Patients', value: '50k+' },

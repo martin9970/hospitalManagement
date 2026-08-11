@@ -5,7 +5,7 @@ import React from 'react';
 const faqs = [
   {
     question: 'How can I book an appointment?',
-    answer: 'You can book an appointment through our website by clicking the "Book Appointment" button, or by calling our help desk at +91 7702021224. We also offer walk-in appointments for general consultations.'
+    answer: 'You can book an appointment through our website by clicking the "Book Appointment" button, or by calling our help desk at +91 7782892813. We also offer walk-in appointments for general consultations.'
   },
   {
     question: 'Do you provide emergency services?',

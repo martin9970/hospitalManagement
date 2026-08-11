@@ -58,7 +58,7 @@ export default function Home() {
           </div>
 
           <a
-            href="tel:+917702021224"
+            href="tel:+917782862813"
             className="bg-white text-red-600 px-8 py-4 rounded-2xl font-bold text-lg flex items-center gap-3 hover:bg-red-50 hover:scale-105 transition-all shadow-lg"
           >
             <Phone className="h-5 w-5" />

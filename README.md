@@ -1,4 +1,4 @@
-Q9 Multy Speciality Hospital Website
+Aasique Multy Speciality Hospital Website
 
 A modern, responsive healthcare web application designed to deliver a seamless digital experience for patients exploring hospital services, doctors, and medical facilities.
 

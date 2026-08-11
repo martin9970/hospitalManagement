@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="bg-white p-1.5 rounded-lg flex items-center justify-center">
                 <img
                   src="https://res.cloudinary.com/dgcyqntse/image/upload/v1773725210/1000572077-removebg-preview_o0stug.png"
-                  alt="Q9 Hospital Logo"
+                  alt="Aasique Hospital Logo"
                   className="w-10 h-10 object-contain"
                 />
               </div>
@@ -24,7 +24,7 @@ export default function Footer() {
               {/* Text */}
               <div className="leading-tight">
                 <h2 className="text-lg font-bold text-white tracking-wide">
-                  Q9 MULTY SPECIALITY
+                  Aasique MULTY SPECIALITY
                 </h2>
                 <p className="text-sm text-blue-500 font-medium">
                   HOSPITAL
@@ -84,23 +84,22 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-blue-500 mt-1" />
                 <span>
-                  D.No: 10-21/1/6, Sriramanagar,<br />
-                  Near Petrol Bunk, Opp. GVMC Park,<br />
-                  Lankelapalem, Anakapalli Dist - 531019
+                  Thawe, Gopalganj, Bihar (PIN: 841440),<br />
+                  Near Thawe Durga Mandir,<br />
                 </span>
               </li>
 
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-500" />
                 <span>
-                  +91 7702021224<br />
-                  +91 7672021224
+                  +91 7782862813<br />
+                  +91 9771079515
                 </span>
               </li>
 
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-blue-500" />
-                <span>q9hospital2026@gmail.com</span>
+                <span>Doctoraashique@gmail.com</span>
               </li>
 
             </ul>
@@ -110,7 +109,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Q9 Multy Speciality Hospital. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Aasique Multy Speciality Hospital. All rights reserved.</p>
         </div>
 
       </div>

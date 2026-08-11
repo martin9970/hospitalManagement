@@ -54,3 +54,13 @@ body {
   display: flex;
   animation: scroll 25s linear infinite;
 }
+
+/* Hide scrollbar while keeping functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

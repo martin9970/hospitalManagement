@@ -36,10 +36,10 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
             {[
-              { icon: Phone, title: 'Primary Call', info: '+91 7702021224', sub: '24/7 Availability', color: 'bg-blue-600' },
-              { icon: Phone, title: 'Secondary', info: '+91 7672021224', sub: 'Support & Inquiry', color: 'bg-teal-600' },
-              { icon: Mail, title: 'Email Us', info: 'q9hospital2026@gmail.com', sub: 'General Inquiries', color: 'bg-slate-800' },
-              { icon: MapPin, title: 'Visit Us', info: 'Sriramanagar, Lankelapalem', sub: 'Anakapalli Dist - 531019', color: 'bg-blue-500' },
+              { icon: Phone, title: 'Primary Call', info: '+91 7782862813', sub: '24/7 Availability', color: 'bg-blue-600' },
+              { icon: Phone, title: 'Secondary', info: '+91 7070550830', sub: 'Support & Inquiry', color: 'bg-teal-600' },
+              { icon: Mail, title: 'Email Us', info: 'Doctoraashique@gmail.com', sub: 'General Inquiries', color: 'bg-slate-800' },
+              { icon: MapPin, title: 'Visit Us', info: 'Thawe, Gopalganj', sub: 'Thawe Dist - 841440', color: 'bg-blue-500' },
             ].map((item, i) => (
               <motion.div
                 key={i}

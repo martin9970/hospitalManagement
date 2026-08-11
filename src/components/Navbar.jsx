@@ -29,13 +29,13 @@ export default function Navbar() {
 
             <img
               src="https://res.cloudinary.com/dgcyqntse/image/upload/v1773725210/1000572077-removebg-preview_o0stug.png"
-              alt="Q9 Hospital Logo"
+              alt="Aasique Hospital Logo"
               className="w-15 h-15 object-contain"
             />
 
             <div className="leading-tight">
               <h1 className="text-sm font-bold text-slate-900 tracking-wide">
-                Q9 MULTY SPECIALITY
+                Aasique MULTY SPECIALITY
               </h1>
               <p className="text-xs text-blue-600 font-medium">
                 HOSPITAL
